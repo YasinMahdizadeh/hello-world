@@ -1,38 +1,75 @@
 
-git is a distributed version control system (VCS)
-Can be used for articles, "paayaan Nameh" and ...
-Git is the best of vcs!
+______________________________1_2__________________________________
 
-____________________________________
 
-    It's important wich directory you run git on.
-    When we want to start working with git on a new directory, First command is:
--> git init
+*** git is a distributed version control system (VCS)
+*** Can be used for articles, Thesis and ...
+*** Git is the best of vcs!
+*** It's important wich directory you run git on.
+    
+--- git init
+    First command. it initializes a .git folder into our directory.
 
-*** ls lthra
+>>> ls lthra
     Shows hidden files in a directory.
     
-------------------------------------
-
--> Git Status
+--- Git Status
     Is very important and useful command.
     
-------------------------------------
+*** We bring files to stage, and then commit them to change them.
 
-We bring files to stage, and then commit them to change them.
-
-*** touch
+>>> touch
     it makes file (in bash)
     
-------------------------------------
-
--> git add
+--- git add
     Send our files to stage.
 
--> git commit -m ''
+--- git commit -m ''
     with -m we can add comment on our code.
-    
------------------------------------
+   
+--- git remote add origin [URL]
+    we use this command to add github repository Address.
 
-we use git remote add origin [URL] to add github repository Address.
-then we use git push -u origin master to push our changes to the github.
+--- git remote set-url:
+    Deletes / Changes an existing git's origin; or add multiple urls for pushing to a single repository.
+    
+--- git remote -v:
+    Current status of fetch and push
+    
+--- git push -u origin master
+    it used to push out changes to a github repository.
+
+_______________________________3___________________________________
+
+
+--- git log:
+    Shows our commands log
+
+>>> touch: Makes a file in bash
+
+*** git add -A
+    -A means all
+
+*** git add "1*"
+    add all files that begins with 1
+
+_______________________________4___________________________________
+
+>>> diff
+    is a unix-based command that shows difference between two files.
+    
+*** Search how to read diff
+
+--- git diff HEAD
+    What's difference between HEAD and the present files?
+
+*** HEAD is the last change we've commited.
+    
+--- git diff --staged
+    What's changed in my stage files?
+    
+--- git reset page3.html
+    unstages page3.html and it won't be commited.
+    
+--- git checkout:
+    returns a file to last commit.
